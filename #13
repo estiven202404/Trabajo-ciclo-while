@@ -1,0 +1,14 @@
+#Escribe un programa que solicite al usuario dos números enteros positivos 
+#y luego imprima la tabla de multiplicar del primer número hasta el segundo número utilizando un bucle while
+
+
+
+# Solicitar al usuario dos números enteros positivos
+numero1 = int(input("Introduce el primer número entero positivo: "))
+numero2 = int(input("Introduce el segundo número entero positivo: "))
+
+contador = 1
+
+while contador <= numero2:
+    print(f"{numero1} x {contador} = {numero1 * contador}")
+    contador += 1

@@ -1,0 +1,17 @@
+#scribe un programa que solicite al usuario un número entero positivo 
+# luego imprima la suma de los primeros n números pares utilizando un bucle while
+
+
+n = int(input("Introduce un número entero positivo: "))
+
+
+suma = 0
+numero_par = 2
+contador = 0
+
+while contador < n:
+    suma += numero_par
+    numero_par += 2
+    contador += 1
+
+print("La suma de los primeros", n, "números pares es:", suma)

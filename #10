@@ -1,0 +1,22 @@
+#Escribe un programa que solicite al usuario dos números enteros positivos 
+#y luego imprima la suma de todos los números entre ellos (inclusive) utilizando un bucle while
+
+
+num1 = int(input("Introduce el primer número entero positivo: "))
+num2 = int(input("Introduce el segundo número entero positivo: "))
+
+if num1 <= 0 or num2 <= 0:
+    print("introduce solo números enteros positivos.")
+else:
+    
+    if num1 > num2:
+        num1, num2 = num2, num1
+
+    
+    suma = 0
+    
+    while num1 <= num2:
+        suma += num1
+        num1 += 1
+
+    print(f"La suma de los números entre los dos números introducidos es: {suma}")

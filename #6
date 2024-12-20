@@ -1,0 +1,19 @@
+#Ecribe un programa que solicite al usuario un número entero positivo
+# y luego imprima la suma de los cuadrados de todos los números desde 1 hasta ese número utilizando un bucle while
+
+n = int(input("Introduce un número entero positivo: "))
+
+if n <= 0:
+    print("introduce un número entero positivo.")
+else:
+    suma_cuadrados = 0
+
+    i = 1
+
+    while i <= n:
+        suma_cuadrados += i ** 2
+        
+    
+        i += 1
+
+    print(f"La suma de los cuadrados de los números desde 1 hasta {n} es: {suma_cuadrados}")

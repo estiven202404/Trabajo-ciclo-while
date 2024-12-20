@@ -1,0 +1,25 @@
+#Escribe un programa que solicite al usuario un número entero positivo 
+# luego imprima todos los números primos menores o iguales a ese número utilizando un bucle while
+
+
+n = int(input("Introduce un número entero positivo: "))
+
+if n <= 0:
+    print("introduce un número entero positivo.")
+else:
+    numero = 2
+
+    
+    while numero <= n:
+        es_primo = True
+        divisor = 2
+        while divisor <= numero // 2:
+            if numero % divisor == 0:
+                es_primo = False
+                break
+            divisor += 1
+        
+        if es_primo:
+            print(numero)
+        
+        numero += 1

@@ -1,0 +1,16 @@
+#Escribe un programa que solicite al usuario un número entero positivo 
+#y luego calcule la cantidad de dígitos del número utilizando un bucle while
+
+
+
+
+numero = int(input("Introduce un número entero positivo: "))
+
+contador_digitos = 0
+
+while numero > 0:
+    numero = numero // 10 
+    contador_digitos += 1  
+
+# Mostrar el resultado
+print("La cantidad de dígitos es:", contador_digitos)

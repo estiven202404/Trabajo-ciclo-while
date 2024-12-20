@@ -1,0 +1,18 @@
+#Escribe un programa que solicite al usuario un número entero positivo 
+#y luego imprima los primeros n números impares utilizando un bucle while
+
+
+
+
+n = int(input("Introduce un número entero positivo: "))
+
+if n <= 0:
+    print("introduce un número entero positivo mayor que cero.")
+else:
+    contador = 0
+    impar = 1
+
+    while contador < n:
+        print(impar)
+        impar += 2  
+        contador += 1

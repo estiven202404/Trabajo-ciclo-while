@@ -1,0 +1,21 @@
+#Escribe un programa que solicite al usuario dos números enteros positivos 
+#luego imprima todos los números entre ellos (inclusive) utilizando un bucle while
+
+numero1 = int(input("Introduce el primer número entero positivo: "))
+numero2 = int(input("Introduce el segundo número entero positivo: "))
+
+# Comprobar que ambos números son positivos
+if numero1 > 0 and numero2 > 0:
+
+    if numero1 <= numero2:
+        i = numero1
+        while i <= numero2:
+            print(i)
+            i += 1
+    else:
+        i = numero2
+        while i <= numero1:
+            print(i)
+            i += 1
+else:
+    print("Ambos números deben ser enteros positivos.")
